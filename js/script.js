@@ -1,21 +1,16 @@
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "vertical",
+const swiper = new Swiper(".hero-slider", {
   loop: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  speed: 800,
 
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
   },
 });
