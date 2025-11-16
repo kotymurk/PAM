@@ -9,8 +9,8 @@ const swiper = new Swiper(".hero-slider", {
     clickable: true,
   },
 
-  autoplay: {
-    delay: 6000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 6000,
+  //   disableOnInteraction: false,
+  // },
 });
