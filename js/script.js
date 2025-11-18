@@ -14,3 +14,11 @@ const swiper = new Swiper(".hero-slider", {
   //   disableOnInteraction: false,
   // },
 });
+
+const burger = document.getElementById("burger");
+const menu = document.querySelector(".menu__body");
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  menu.classList.toggle("active");
+});
