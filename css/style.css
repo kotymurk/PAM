@@ -760,6 +760,77 @@ body {
   line-height: 24px;
 }
 
+/* -----------find------------------- */
+
+.map {
+  position: relative;
+  width: 680px;
+  margin: 0px auto;
+}
+
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.map__base {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.city {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.city:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.city--nicosia {
+  top: 153px !important;
+  left: 92px !important;
+  width: 297px !important;
+}
+
+.city--larnaka {
+  top: 213px !important;
+  left: 256px !important;
+  width: 223px !important;
+}
+
+.city--paphos {
+  top: 193px !important;
+  left: 5px !important;
+  width: 151px !important;
+}
+
+.city--limassol {
+  top: 269px !important;
+  left: 114px !important;
+  width: 183px !important;
+}
+
+.info {
+  transition: opacity 0.3s ease;
+}
+
+.info__bg {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.35s ease;
+}
+
+.info__bg.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ------------media-------------- */
 @media (max-width: 1000px) {
   .header {
@@ -834,7 +905,7 @@ body {
   }
 
   .moving {
-    padding: 40px 0 20px;
+    padding: 40px 0 80px;
     overflow: visible;
   }
 
@@ -871,6 +942,12 @@ body {
   .moving__block-text h2 {
     font-size: 36px;
     text-align: center;
+  }
+
+  .choose__items {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 100px;
   }
 }
 
