@@ -372,18 +372,7 @@ body {
 
 .hero-content .button {
   position: relative;
-  /* font-family: Montserrat;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 30px;
-  border-radius: 30px; */
   background-image: linear-gradient(90deg, #ffdb80 30%, #fdbfa3 90%);
-  /* color: #6d31d0;
-  text-decoration: none;
-  transition: background-image 0.3s ease 0s; */
   margin: 0px 0 50px;
 }
 
@@ -426,8 +415,6 @@ body {
 }
 
 .city-card img {
-  /* width: 100px;
-  height: 100%; */
   display: flex;
   object-fit: cover;
   border-radius: 10px;
@@ -447,22 +434,12 @@ body {
   top: 30%;
   right: 30px;
 
-  /* left: auto !important; */
-  /* transform: translateY(0%) !important; */
-
   display: flex;
   flex-direction: column;
   gap: 12px;
   justify-content: center;
   align-items: center;
   max-width: 20px;
-
-  /* width: auto !important; */
-  /* height: auto !important; */
-  /* padding: 0; */
-  /* margin: 0; */
-
-  /* background-color: green; */
 }
 
 .hero-slider .swiper-pagination-bullet {
@@ -912,6 +889,161 @@ body {
   margin-bottom: 10px;
 }
 
+/* --------------whoare--------------- */
+
+.whoare {
+  padding: 60px 0 0;
+  background-image: linear-gradient(#828cde, #6d31d0);
+}
+
+.whoare__container {
+  display: flex;
+  gap: 120px;
+}
+
+.whoare__block-text {
+  color: #fff;
+}
+
+.whoare__title {
+  font-family: Prompt;
+  font-weight: 600;
+}
+
+.whoare__block-text .line {
+  width: 447px;
+  padding: 0;
+}
+
+.whoare__text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  max-width: 480px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+.whoare__text:last-child {
+  margin-bottom: 0;
+}
+
+.whoare__button .button {
+  box-shadow: 0px 14px 10px rgba(0, 0, 0, 0.1);
+}
+
+.whoare__card-fouder {
+  display: flex;
+  position: relative;
+  min-width: 580px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 20px;
+  gap: 30px;
+  top: -20px;
+}
+
+/* .card-fouder__img {
+}
+
+.card-fouder__block-text {
+} */
+
+.card-fouder__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #6d31d0;
+  margin: 30px 0px 15px 10px;
+}
+
+.card-fouder__text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.card-fouder__button .button {
+  box-shadow: 0px 14px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------how we------------------- */
+
+.how-we {
+  padding: 80px 0;
+  background-image: linear-gradient(#fefc9e, #fdbfa3);
+}
+
+.how-we__container {
+}
+
+.how-we__block-text {
+  margin: 0 auto;
+
+  max-width: 580px;
+  color: #434364;
+  text-align: center;
+}
+
+.how-we__block-text h2 {
+  font-size: 36px;
+  font-weight: 600;
+
+  margin-bottom: 60px;
+}
+
+.how-we__block-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+.how-we__items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.how-we__item {
+  max-width: 280px;
+}
+
+/* .item-how-we1 {
+} */
+
+.item-how-we__icon {
+  margin-bottom: 24px;
+}
+
+.item-how-we__text {
+  color: #434364;
+  max-width: 280px;
+}
+
+.item-how-we__text h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #6d31d0;
+}
+
+.item-how-we__text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* .item-how-we2 {
+}
+
+.item-how-we3 {
+}
+
+.item-how-we4 {
+} */
+
 /* ------------media-------------- */
 @media (max-width: 1000px) {
   .header {
@@ -1026,6 +1158,27 @@ body {
   }
 
   .choose__items {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 100px;
+  }
+
+  .find {
+    flex-direction: column;
+    padding: 80px 80px 0;
+  }
+
+  .whoare {
+    padding: 60px 100px 0;
+  }
+
+  .whoare__container {
+    flex-direction: column;
+    margin: 40px 0 0;
+    gap: 50px;
+  }
+
+  .how-we__items {
     flex-wrap: wrap;
     gap: 20px;
     padding: 0 100px;
