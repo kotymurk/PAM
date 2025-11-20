@@ -45,12 +45,12 @@ document.querySelectorAll(".city").forEach((city) => {
 });
 
 // закрытие карточек при клике вне их области
-// document.addEventListener("click", (event) => {
-//   const isMap = event.target.closest(".map");
-//   const isCard = event.target.closest(".info__bg");
+document.addEventListener("click", (event) => {
+  const isMap = event.target.closest(".map");
+  const isCard = event.target.closest(".info__bg");
 
-//   if (!isMap && !isCard) {
-//     allCards.forEach((card) => card.classList.remove("active"));
-//     infoContainer.classList.remove("active");
-//   }
-// });
+  if (!isMap && !isCard) {
+    allCards.forEach((card) => card.classList.remove("active"));
+    infoContainer.classList.remove("active");
+  }
+});

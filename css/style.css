@@ -765,7 +765,7 @@ body {
 
 .map__wrapper {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   align-items: flex-start;
   margin-top: 40px;
 }
@@ -976,8 +976,8 @@ body {
   background-image: linear-gradient(#fefc9e, #fdbfa3);
 }
 
-.how-we__container {
-}
+/* .how-we__container {
+} */
 
 .how-we__block-text {
   margin: 0 auto;
@@ -1164,24 +1164,50 @@ body {
   }
 
   .find {
-    flex-direction: column;
-    padding: 80px 80px 0;
+    min-height: 900px; /* регулируем высоту так, чтобы вся карта влезала */
+    padding-bottom: 140px;
   }
 
-  .whoare {
-    padding: 60px 100px 0;
+  .find_container {
+    flex-direction: column; /* чтобы инфоблок оставался над картой */
+    align-items: center;
+    gap: 40px;
   }
 
-  .whoare__container {
-    flex-direction: column;
-    margin: 40px 0 0;
-    gap: 50px;
+  .map__wrapper {
+    flex-direction: column; /* карта сверху, инфоблок снизу */
+    align-items: center;
+    gap: 30px;
   }
 
-  .how-we__items {
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0 100px;
+  .map {
+    order: 1;
+  }
+
+  .information__container {
+    width: 100%;
+    max-width: 680px;
+    margin-top: 20px; /* убираем отрицательный margin */
+    position: relative; /* обычное расположение */
+    order: 2;
+  }
+
+  .information__container.active {
+    display: block; /* показываем при клике */
+  }
+
+  .info__bg {
+    position: relative;
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .info__bg.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 390px;
   }
 }
 
