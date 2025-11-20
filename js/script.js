@@ -8,11 +8,6 @@ const swiper = new Swiper(".hero-slider", {
     el: ".swiper-pagination",
     clickable: true,
   },
-
-  // autoplay: {
-  //   delay: 6000,
-  //   disableOnInteraction: false,
-  // },
 });
 
 const burger = document.getElementById("burger");
@@ -23,17 +18,39 @@ burger.addEventListener("click", () => {
   menu.classList.toggle("active");
 });
 
+const infoContainer = document.querySelector(".information__container");
+const allCards = document.querySelectorAll(".info__bg");
+
 document.querySelectorAll(".city").forEach((city) => {
-  city.addEventListener("click", () => {
+  city.addEventListener("click", (event) => {
+    event.stopPropagation();
+
     const id = city.dataset.city;
-
-    document.querySelectorAll(".info__bg").forEach((card) => {
-      card.classList.remove("active");
-    });
-
     const current = document.querySelector("#info-" + id);
-    if (current) {
-      current.classList.add("active");
+
+    // закрыть открытую карточку
+    if (current.classList.contains("active")) {
+      current.classList.remove("active");
+      infoContainer.classList.remove("active");
+      return;
     }
+
+    // закрыть все карточки
+    allCards.forEach((card) => card.classList.remove("active"));
+
+    // открыть карточку
+    current.classList.add("active");
+    infoContainer.classList.add("active");
   });
 });
+
+// закрытие карточек при клике вне их области
+// document.addEventListener("click", (event) => {
+//   const isMap = event.target.closest(".map");
+//   const isCard = event.target.closest(".info__bg");
+
+//   if (!isMap && !isCard) {
+//     allCards.forEach((card) => card.classList.remove("active"));
+//     infoContainer.classList.remove("active");
+//   }
+// });

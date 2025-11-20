@@ -12,10 +12,10 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+    /> -->
     <title>PAMConsalting</title>
   </head>
   <body>
@@ -61,7 +61,7 @@
         </div>
       </div>
     </header>
-    <section class="hero-slider swiper">
+    <section class="hero-slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide slide-1">
           <div class="hero-content">
@@ -351,120 +351,192 @@
           <h2>FIND THE IDEAL LOCATION TO CALL HOME</h2>
           <p>Click your mouse over any city to learn more about it</p>
         </div>
-        <div class="map">
-          <img class="map__base" src="./img/find/map.svg" alt="map" />
-          <img
-            class="city city--nicosia"
-            data-city="nicosia"
-            src="./img/find/nicosia.svg"
-            alt="nicosia"
-          />
-          <img
-            class="city city--larnaka"
-            data-city="larnaka"
-            src="./img/find/larnaka.svg"
-            alt="larnaka"
-          />
-          <img
-            class="city city--paphos"
-            data-city="paphos"
-            src="./img/find/paphos.svg"
-            alt="paphos"
-          />
-          <img
-            class="city city--limassol"
-            data-city="limassol"
-            src="./img/find/limassol.svg"
-            alt="limassol"
-          />
-        </div>
-      </div>
-      <div class="info__bg" id="info-larnaka">
-        <div class="info">
-          <div class="info__img">
-            <img class="info__photo" src="./img/find/01.png" alt="larnaka" />
-            <img class="info__photo" src="./img/find/02.png" alt="larnaka" />
-            <img class="info__photo" src="./img/find/03.png" alt="larnaka" />
+        <div class="map__wrapper">
+          <div class="map">
+            <img class="map__base" src="./img/find/map.svg" alt="map" />
+            <img
+              class="city city--nicosia"
+              data-city="nicosia"
+              src="./img/find/nicosia.svg"
+              alt="nicosia"
+            />
+            <img
+              class="city city--larnaka"
+              data-city="larnaka"
+              src="./img/find/larnaka.svg"
+              alt="larnaka"
+            />
+            <img
+              class="city city--paphos"
+              data-city="paphos"
+              src="./img/find/paphos.svg"
+              alt="paphos"
+            />
+            <img
+              class="city city--limassol"
+              data-city="limassol"
+              src="./img/find/limassol.svg"
+              alt="limassol"
+            />
           </div>
-          <h3 class="info__title">Larnaka</h3>
-          <p class="info__text">
-            Being the third largest city in Cyprus and home to the island’s most
-            busy airport, it offers visitors a variety of activities and
-            experiences that will remain unforgettable to any individual. It is
-            known for its Salt Lake that hosts thousands of Flamingos each year
-            as well as for its sandy beaches and historical sites. The rapidly
-            increasing corporate ecosystem and comfortable lifestyle create an
-            exceptional living environment for anyone who is looking to enjoy a
-            relaxed life by the sea.
-          </p>
-        </div>
-      </div>
-      <div class="info__bg" id="info-nicosia">
-        <div class="info">
-          <div class="info__img">
-            <img class="info__photo" src="./img/find/0001.png" alt="nicosia" />
-            <img class="info__photo" src="./img/find/0002.png" alt="nicosia" />
-            <img class="info__photo" src="./img/find/0003.png" alt="nicosia" />
+
+          <div class="information__container">
+            <div class="info__bg" id="info-larnaka">
+              <div class="info">
+                <div class="info__img">
+                  <img
+                    class="info__photo"
+                    src="./img/find/01.png"
+                    alt="larnaka"
+                  />
+                  <img
+                    class="info__photo"
+                    src="./img/find/02.png"
+                    alt="larnaka"
+                  />
+                  <img
+                    class="info__photo"
+                    src="./img/find/03.png"
+                    alt="larnaka"
+                  />
+                </div>
+                <h3 class="info__title">Larnaka</h3>
+                <p class="info__text">
+                  Being the third largest city in Cyprus and home to the
+                  island’s most busy airport, it offers visitors a variety of
+                  activities and experiences that will remain unforgettable to
+                  any individual.
+                </p>
+                <p class="info__text">
+                  It is known for its Salt Lake that hosts thousands of
+                  Flamingos each year as well as for its sandy beaches and
+                  historical sites.
+                </p>
+                <p class="info__text">
+                  The rapidly increasing corporate ecosystem and comfortable
+                  lifestyle create an exceptional living environment for anyone
+                  who is looking to enjoy a relaxed life by the sea.
+                </p>
+              </div>
+            </div>
+            <div class="info__bg" id="info-nicosia">
+              <div class="info">
+                <div class="info__img">
+                  <img
+                    class="info__photo"
+                    src="./img/find/0001.png"
+                    alt="nicosia"
+                  />
+                  <img
+                    class="info__photo"
+                    src="./img/find/0002.png"
+                    alt="nicosia"
+                  />
+                  <img
+                    class="info__photo"
+                    src="./img/find/0003.png"
+                    alt="nicosia"
+                  />
+                </div>
+                <h3 class="info__title">Nicosia</h3>
+                <p class="info__text">
+                  Also known as Lefkosia, Nicosia is the capital city of Cyprus
+                  and the only divided capital city in the world. The unique
+                  urban scenery is built upon a rich historical past and its
+                  mixture with modern lifestyle.
+                </p>
+                <p class="info__text">
+                  It is in close proximity to every other city in Cyprus, giving
+                  residents the flexibility of choosing to enjoy the
+                  breathtaking views from the mountain tops and soothing beaches
+                  of the coastal cities within minutes.
+                </p>
+
+                <p class="info__text">
+                  Nicosia has become an attractive cosmopolitan city made of
+                  diverse cultural communities, excellent healthcare facilities
+                  and every aspect one requires to build the lifestyle of your
+                  dreams.
+                </p>
+              </div>
+            </div>
+            <div class="info__bg" id="info-paphos">
+              <div class="info">
+                <div class="info__img">
+                  <img
+                    class="info__photo"
+                    src="./img/find/00001.png"
+                    alt="paphos"
+                  />
+                  <img
+                    class="info__photo"
+                    src="./img/find/00002.png"
+                    alt="paphos"
+                  />
+                  <img
+                    class="info__photo"
+                    src="./img/find/00003.png"
+                    alt="paphos"
+                  />
+                </div>
+                <h3 class="info__title">Paphos</h3>
+                <p class="info__text">
+                  Paphos is located on the southwest coast of Cyprus, and it is
+                  one of the most popular cities for expat communities. The
+                  crystal-clear, family-friendly beaches are a frequent holiday
+                  retreat for millions of tourists all year round. Its
+                  exceptional infrastructure includes a huge shopping mall,
+                  hospitals, the second largest airport of the island, and many
+                  schools.
+                </p>
+                <p class="info__text">
+                  These are only a few reasons why people choose to move to
+                  Paphos, as there are many more reasons it is considered one of
+                  the most excellent places to live in Europe.
+                </p>
+              </div>
+            </div>
+            <div class="info__bg" id="info-limassol">
+              <div class="info">
+                <div class="info__img">
+                  <img
+                    class="info__photo"
+                    src="./img/find/001.png"
+                    alt="limassol"
+                  />
+                  <img
+                    class="info__photo"
+                    src="./img/find/002.png"
+                    alt="limassol"
+                  />
+                  <img
+                    class="info__photo"
+                    src="./img/find/003.png"
+                    alt="limassol"
+                  />
+                </div>
+                <h3 class="info__title">Limassol</h3>
+                <p class="info__text">
+                  The sunny city of Limassol is the second largest city of the
+                  island, and it is among the most desirable travel and business
+                  destinations both for families and for entrepreneurs looking
+                  to expand their business horizons. The combination of elegant
+                  accommodation and ancient architectural views is bound to
+                  capture the interest of people of any age.
+                </p>
+                <p class="info__text">
+                  The Limassol Marina is the first marina to harbor yachts in
+                  Cyprus and it is surrounded by renowned bars and restaurants.
+                  The residents of Limassol pride themselves on their cultural
+                  values and festivities as hundreds of theatrical performances
+                  take place each year at the Rialto theater, and the city holds
+                  an annual Wine Festival and Carnival Parade.
+                </p>
+              </div>
+            </div>
           </div>
-          <h3 class="info__title">Nicosia</h3>
-          <p class="info__text">
-            Also known as Lefkosia, Nicosia is the capital city of Cyprus and
-            the only divided capital city in the world. The unique urban scenery
-            is built upon a rich historical past and its mixture with modern
-            lifestyle. It is in close proximity to every other city in Cyprus,
-            giving residents the flexibility of choosing to enjoy the
-            breathtaking views from the mountain tops and soothing beaches of
-            the coastal cities within minutes. Nicosia has become an attractive
-            cosmopolitan city made of diverse cultural communities, excellent
-            healthcare facilities and every aspect one requires to build the
-            lifestyle of your dreams.
-          </p>
         </div>
       </div>
-      <div class="info__bg" id="info-paphos">
-        <div class="info">
-          <div class="info__img">
-            <img class="info__photo" src="./img/find/00001.png" alt="paphos" />
-            <img class="info__photo" src="./img/find/00002.png" alt="paphos" />
-            <img class="info__photo" src="./img/find/00003.png" alt="paphos" />
-          </div>
-          <h3 class="info__title">Paphos</h3>
-          <p class="info__text">
-            Paphos is located on the southwest coast of Cyprus, and it is one of
-            the most popular cities for expat communities. The crystal-clear,
-            family-friendly beaches are a frequent holiday retreat for millions
-            of tourists all year round. Its exceptional infrastructure includes
-            a huge shopping mall, hospitals, the second largest airport of the
-            island, and many schools. These are only a few reasons why people
-            choose to move to Paphos, as there are many more reasons it is
-            considered one of the most excellent places to live in Europe.
-          </p>
-        </div>
-      </div>
-      <div class="info__bg" id="info-limassol">
-        <div class="info">
-          <div class="info__img">
-            <img class="info__photo" src="./img/find/001.png" alt="limassol" />
-            <img class="info__photo" src="./img/find/002.png" alt="limassol" />
-            <img class="info__photo" src="./img/find/003.png" alt="limassol" />
-          </div>
-          <h3 class="info__title">Limassol</h3>
-          <p class="info__text">
-            The sunny city of Limassol is the second largest city of the island,
-            and it is among the most desirable travel and business destinations
-            both for families and for entrepreneurs looking to expand their
-            business horizons. The combination of elegant accommodation and
-            ancient architectural views is bound to capture the interest of
-            people of any age. The Limassol Marina is the first marina to harbor
-            yachts in Cyprus and it is surrounded by renowned bars and
-            restaurants. The residents of Limassol pride themselves on their
-            cultural values and festivities as hundreds of theatrical
-            performances take place each year at the Rialto theater, and the
-            city holds an annual Wine Festival and Carnival Parade.
-          </p>
-        </div>
-      </div>
-      <div class="tooltip"></div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
