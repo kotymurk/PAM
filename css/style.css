@@ -14,7 +14,6 @@ input:focus {
 a,
 p {
   text-decoration: none;
-  color: #434364;
 }
 
 ul,
@@ -42,6 +41,7 @@ body {
   height: 100%;
   line-height: 1;
   overflow-x: hidden;
+  color: #434364;
 }
 
 body {
@@ -1043,6 +1043,294 @@ body {
 
 .item-how-we4 {
 } */
+/* ------------contact------------------ */
+
+.contact {
+  background-image: linear-gradient(
+    #6d31d01a 10%,
+    #6d31d036 27%,
+    #6d31d079 47%,
+    #6d31d0 100%
+  );
+  padding: 80px 0;
+}
+/* .contact__container {
+} */
+.contact__block-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact__block-text h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #434364;
+}
+.contact__block-text .line {
+  margin-bottom: 30px;
+}
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.contacts__item a {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  color: #6d31d0;
+  text-decoration: none;
+}
+
+.contacts__item img {
+  width: 40px;
+  height: 40px;
+}
+/* .contacts__item_phone {
+}
+.contacts__item_email {
+} */
+.contact__form-wrapper {
+  background: rgba(255, 219, 128, 0.5);
+  padding: 30px 300px;
+  width: 100%;
+  margin: 40px auto 0;
+  border-radius: 60px;
+  text-align: center;
+}
+
+.contact__form-wrapper h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #434364;
+}
+form .row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.row input,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: Prompt;
+  resize: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.row textarea {
+  height: 130px;
+  resize: none;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-checkbox .box {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  display: inline-block;
+  transition: 0.25s;
+  background: transparent;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.custom-checkbox .box::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 10px;
+  height: 18px;
+  border: solid #6d31d0;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.custom-checkbox input:checked + .box {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+.custom-checkbox input:checked + .box::after {
+  opacity: 1;
+}
+
+.custom-checkbox .checkbox__text {
+  margin-left: 12px;
+  font-size: 16px;
+  color: #605866;
+}
+.checkbox__text a {
+  color: #6d31d0;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.submit-btn {
+  margin-top: 30px;
+}
+
+/* ----------partn------------ */
+
+.partners {
+  padding: 80px 0;
+  background: #fff;
+}
+
+/* .partners__container {
+} */
+
+.partners__container h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #434364;
+}
+
+.partners__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+/* ----------qu----------- */
+
+.questions {
+  padding: 80px 0;
+  background-image: linear-gradient(#6d31d0, #828cde);
+  color: #fff;
+}
+.questions__container {
+  position: relative;
+}
+.questions__title {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.questions__slider-wrapper {
+  overflow: visible;
+  width: 100%;
+  margin: 0 auto 25px;
+}
+.slides {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+.slide {
+  position: relative;
+  width: 380px;
+  background: #fff;
+  color: #434364;
+  border-radius: 20px;
+  margin: 0 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+}
+
+.slide img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tag {
+  position: absolute;
+  top: 160px;
+  right: 30px;
+  background-image: linear-gradient(#53269d, #6d31d0);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 88px;
+}
+
+.slide h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #6d31d0;
+  margin-bottom: 20px;
+  padding: 0 30px 0;
+}
+
+.slide p {
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 24px;
+  padding: 0 30px 40px;
+}
+
+#slide-1:checked ~ .questions__container .slides .slide:nth-child(1),
+#slide-2:checked ~ .questions__container .slides .slide:nth-child(2),
+#slide-3:checked ~ .questions__container .slides .slide:nth-child(3) {
+  transform: scale(1.1);
+  opacity: 1;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  z-index: 5;
+}
+
+#slide-1:checked ~ .questions__container .dots label[for="slide-1"],
+#slide-2:checked ~ .questions__container .dots label[for="slide-2"],
+#slide-3:checked ~ .questions__container .dots label[for="slide-3"] {
+  background: #fff;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.dots label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="radio"] {
+  display: none;
+}
 
 /* ------------media-------------- */
 @media (max-width: 1000px) {
@@ -1164,12 +1452,12 @@ body {
   }
 
   .find {
-    min-height: 900px; /* регулируем высоту так, чтобы вся карта влезала */
-    padding-bottom: 140px;
+    min-height: 900px;
+    padding: 80px 140px;
   }
 
   .find_container {
-    flex-direction: column; /* чтобы инфоблок оставался над картой */
+    flex-direction: column;
     align-items: center;
     gap: 40px;
   }
@@ -1187,13 +1475,13 @@ body {
   .information__container {
     width: 100%;
     max-width: 680px;
-    margin-top: 20px; /* убираем отрицательный margin */
-    position: relative; /* обычное расположение */
+    margin-top: 20px;
+    position: relative;
     order: 2;
   }
 
   .information__container.active {
-    display: block; /* показываем при клике */
+    display: block;
   }
 
   .info__bg {
@@ -1208,6 +1496,25 @@ body {
     opacity: 1;
     transform: translateY(0);
     margin-top: 390px;
+  }
+
+  .whoare {
+    padding: 60px 100px 20px;
+  }
+
+  .whoare__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .how-we__items {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 100px;
+  }
+
+  .contact__form-wrapper {
+    padding: 30px 10px;
   }
 }
 
