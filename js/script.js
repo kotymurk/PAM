@@ -44,6 +44,13 @@ document.querySelectorAll(".city").forEach((city) => {
   });
 });
 
+// карточка открытая по умолчанию
+const defaultCity = "nicosia";
+const defaultCard = document.querySelector("#info-" + defaultCity);
+
+defaultCard.classList.add("active");
+infoContainer.classList.add("active");
+
 // закрытие карточек при клике вне их области
 document.addEventListener("click", (event) => {
   const isMap = event.target.closest(".map");

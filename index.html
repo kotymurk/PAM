@@ -646,19 +646,20 @@
             <h2>Contact Us</h2>
             <div class="line"></div>
             <div class="contacts__item">
-              <img src="./img/contact/tel.svg" alt="tel" />
               <a
                 href="tell:+357 9056759"
                 class="contacts__item contacts__item_phone"
-                >+357 9056759</a
+                ><img src="./img/contact/tel.svg" alt="tel" />+357 9056759</a
               >
             </div>
             <div class="contacts__item">
-              <img src="./img/contact/mes.svg" alt="mes" />
               <a
                 href="mailto:contact@pamrelocation.com"
                 class="contacts__item contacts__item_email"
-                >contact@pamrelocation.com</a
+                ><img
+                  src="./img/contact/mes.svg"
+                  alt="mes"
+                />contact@pamrelocation.com</a
               >
             </div>
           </div>
@@ -758,7 +759,13 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <h5>© 2022 PAM Consulting. All rights reserved</h5>
+        <h5>
+          &copy;
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          PAM Consulting. All rights reserved
+        </h5>
         <div class="diviber"></div>
         <a href="#" class="footer__items">Disclaimer</a>
         <div class="diviber"></div>
