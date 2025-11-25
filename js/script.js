@@ -1,11 +1,20 @@
-const swiper = new Swiper(".hero-slider", {
+// HERO SWIPER
+const heroSwiper = new Swiper(".hero-swiper", {
   loop: true,
-  slidesPerView: 1,
-  spaceBetween: 0,
-  speed: 800,
-
   pagination: {
-    el: ".swiper-pagination",
+    el: ".hero-pagination",
+    clickable: true,
+  },
+});
+
+// CITIES SWIPER внутри первого слайда
+const citiesSwiper = new Swiper(".cities-swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  grabCursor: true,
+  nested: true, // 🔥 критично — отключает конфликт с родительским swiper
+  pagination: {
+    el: ".cities-pagination",
     clickable: true,
   },
 });
@@ -60,4 +69,20 @@ document.addEventListener("click", (event) => {
     allCards.forEach((card) => card.classList.remove("active"));
     infoContainer.classList.remove("active");
   }
+});
+
+const questionsSwiper = new Swiper(".questions__swiper", {
+  spaceBetween: 20,
+  slidesPerView: 3,
+
+  breakpoints: {
+    1200: { slidesPerView: 3 },
+    900: { slidesPerView: 2 },
+    480: { slidesPerView: 1 },
+  },
+
+  pagination: {
+    el: ".question-pagination",
+    clickable: true,
+  },
 });
