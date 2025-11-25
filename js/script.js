@@ -9,10 +9,8 @@ const heroSwiper = new Swiper(".hero-swiper", {
 
 // CITIES SWIPER внутри первого слайда
 const citiesSwiper = new Swiper(".cities-swiper", {
-  slidesPerView: "auto",
+  slidesPerView: 4,
   spaceBetween: 20,
-  grabCursor: true,
-  nested: true, // 🔥 критично — отключает конфликт с родительским swiper
   pagination: {
     el: ".cities-pagination",
     clickable: true,
@@ -44,8 +42,8 @@ document.querySelectorAll(".city").forEach((city) => {
       return;
     }
 
-    // закрыть все карточки
-    allCards.forEach((card) => card.classList.remove("active"));
+    // // закрыть все карточки
+    // allCards.forEach((card) => card.classList.remove("active"));
 
     // открыть карточку
     current.classList.add("active");
@@ -60,16 +58,16 @@ const defaultCard = document.querySelector("#info-" + defaultCity);
 defaultCard.classList.add("active");
 infoContainer.classList.add("active");
 
-// закрытие карточек при клике вне их области
-document.addEventListener("click", (event) => {
-  const isMap = event.target.closest(".map");
-  const isCard = event.target.closest(".info__bg");
+// // закрытие карточек при клике вне их области
+// document.addEventListener("click", (event) => {
+//   const isMap = event.target.closest(".map");
+//   const isCard = event.target.closest(".info__bg");
 
-  if (!isMap && !isCard) {
-    allCards.forEach((card) => card.classList.remove("active"));
-    infoContainer.classList.remove("active");
-  }
-});
+//   if (!isMap && !isCard) {
+//     allCards.forEach((card) => card.classList.remove("active"));
+//     infoContainer.classList.remove("active");
+//   }
+// });
 
 const questionsSwiper = new Swiper(".questions__swiper", {
   spaceBetween: 20,
