@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -670,19 +670,20 @@
           </div>
           <div class="contact__form-wrapper">
             <h3>SEND INQUIRY</h3>
-            <form>
+            <form action="https://formspree.io/f/mojpwdgd" method="post">
               <div class="row">
-                <input type="text" placeholder="Your Name" />
-                <input type="email" placeholder="Email" />
+                <input type="text" name="name" placeholder="Your Name" />
+                <input type="email" name="email" placeholder="Email" />
               </div>
               <div class="row">
-                <input type="text" placeholder="Subject" />
-                <input type="text" placeholder="Phone" />
+                <input type="text" name="subject" placeholder="Subject" />
+                <input type="text" name="phone" placeholder="Phone" />
               </div>
               <textarea
                 placeholder="Your message"
                 rows="7"
                 cols="15"
+                name="message"
               ></textarea>
 
               <label class="custom-checkbox">
